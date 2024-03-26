@@ -1,0 +1,23 @@
+@if(product){
+<div class="d-flex justify-content-center">
+  <div class="card m-2" style="width: 300px">
+    <img
+      class="card-img-top m-5"
+      style="width: 200px; height: 200"
+      src="{{ product.image }}"
+      alt="Card image cap"
+    />
+    <div class="card-body" style="height: 150px">
+      <h5 class="card-title">
+        <b>{{ product.title }}</b>
+      </h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Product price: {{ product.price }}</li>
+      <li class="list-group-item">Product count :{{ product.rating.count }}</li>
+      <li class="list-group-item">Product rating: {{ product.rating.rate }}</li>
+    </ul>
+  </div>
+</div>
+
+}

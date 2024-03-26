@@ -1,0 +1,46 @@
+<body>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="mb-4">Registration Form</h2>
+        <form
+          class="border border-primary rounded m-2 p-2"
+          [formGroup]="applyForm"
+          (submit)="submitApplication()"
+        >
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="first-name"
+              placeholder="Enter your first name"
+              formControlName="firstName"
+            />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="last-name"
+              placeholder="Enter your last name"
+              formControlName="firstName"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+              formControlName="email"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary m-2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

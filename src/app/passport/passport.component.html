@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-center m-2">
+  <button class="btn btn-outline-success m-2" (click)="setNormal()">
+    Normal Booking
+  </button>
+  <button class="btn btn-outline-warning m-2" (click)="setTatkal()">
+    Tatkal Booking
+  </button>
+</div>
+@if (showNormalBooking) {
+<div class="d-flex justify-content-center m-2">This is normal Booking</div>
+} @if (showTatkalBooking) {
+<div class="d-flex justify-content-center m-2">This is tatkal Booking</div>
+}
