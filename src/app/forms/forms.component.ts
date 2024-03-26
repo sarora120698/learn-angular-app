@@ -22,5 +22,6 @@ export class FormsComponent {
       this.applyForm.value.lastName ?? '',
       this.applyForm.value.email ?? ''
     );
+    this.applyForm.reset();
   }
 }
